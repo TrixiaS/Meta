@@ -1,0 +1,27 @@
+const Ewallets = [];
+// This is the variable
+
+function mintNFT(Name, Age, Status, DateAcquired) {
+  const Ewallet = {
+    "Name": Name,
+    "Age": Age,
+    "Status": Status,
+    "DateAcquired": DateAcquired
+//This is the object
+  };
+  Ewallets.push(Ewallet);
+//Push is used to add new items to the end of the array
+  console.log("Name of user: " + Name);
+}
+
+function listNFTs() {
+  for (let a = 0; a < Ewallets.length; a++) {
+//This is the loop
+    console.log(Ewallets[a]);
+  }
+}
+
+//Total number of NFTs minted
+function getTotalSupply() {
+  console.log("Total number of NFTs minted: " + Ewallets.length);
+}
